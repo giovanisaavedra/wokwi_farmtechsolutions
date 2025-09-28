@@ -506,10 +506,9 @@ farmtech-irrigacao-inteligente/
 ### 🏫 Instituição
 - **FIAP** - Faculdade de Informática e Administração Paulista
 - **Curso:** Técnólogo em Inteligência Artificial
-- **Disciplina:** Tecnologia em IoT e Agricultura Digital
-- **Professor:** [Nome do Professor]
-- **Turma:** [Sua Turma]
-- **Semestre:** 2025.1
+- **Disciplina:** Fase 02 - Cap 1 - Um Mapa do Tesouro
+- **Turma:** Graduação - 1TIAOS 
+- **Semestre:** 2025.2
 
 ## 📚 Referências
 
@@ -594,14 +593,6 @@ Contribuições são bem-vindas! Por favor:
 3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
 4. **Push** para a branch (`git push origin feature/AmazingFeature`)
 5. **Abra** um Pull Request
-
----
-
-## 📞 Suporte
-
-- 📧 **Email:** farmtech.solutions@fiap.com.br
-- 💬 **Discord:** [Servidor FIAP IoT](https://discord.gg/fiap-iot)
-- 📋 **Issues:** [GitHub Issues](https://github.com/SEU_USUARIO/farmtech-irrigacao-inteligente/issues)
 
 ---
 
