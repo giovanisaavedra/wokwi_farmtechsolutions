@@ -490,22 +490,22 @@ farmtech-irrigacao-inteligente/
 ## 👥 Equipe
 
 ### 🧑‍💻 Desenvolvedores
-- **[Seu Nome]** - *Desenvolvedor Principal*
+- **Giovani Agostini Saavedra** - 
   - 📧 seuemail@fiap.com.br
   - 🔗 [LinkedIn](https://linkedin.com/in/seuperfil)
-  - 📋 Responsabilidades: Desenvolvimento C++, lógica de irrigação
+  - 📋 Responsabilidades: 
 
-- **[Nome do Colega 2]** - *Especialista em Hardware*
+- **Márcio Elifas** - 
   - 📧 colega2@fiap.com.br  
-  - 📋 Responsabilidades: Circuito, testes, documentação técnica
+  - 📋 Responsabilidades: 
 
 - **[Nome do Colega 3]** - *Analista de Dados*
   - 📧 colega3@fiap.com.br
-  - 📋 Responsabilidades: Análise R, Python, documentação
+  - 📋 Responsabilidades: 
 
 ### 🏫 Instituição
 - **FIAP** - Faculdade de Informática e Administração Paulista
-- **Curso:** [Seu Curso]
+- **Curso:** Técnólogo em Inteligência Artificial
 - **Disciplina:** Tecnologia em IoT e Agricultura Digital
 - **Professor:** [Nome do Professor]
 - **Turma:** [Sua Turma]
