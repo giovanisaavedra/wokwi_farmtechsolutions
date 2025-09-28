@@ -242,7 +242,7 @@ GND ── GND
 ```
 
 ### 📸 Imagem do Circuito
-![Circuito Wokwi](wokwi/circuit-image.png)
+![Circuito Wokwi](COLOCAR CAMINHO) 
 
 ### 📄 Arquivo JSON do Wokwi
 O circuito completo está disponível em: `wokwi/diagram.json`
@@ -483,9 +483,9 @@ farmtech-irrigacao-inteligente/
 ### 📸 Screenshots
 | Cenário | Resultado |
 |---------|-----------|
-| ![Irrigação ON](docs/images/irrigacao-on.png) | Sistema irrigando |
-| ![Irrigação OFF](docs/images/irrigacao-off.png) | Sistema em standby |
-| ![Monitor Serial](docs/images/monitor-serial.png) | Log completo |
+| ![Irrigação ON](colocar caminho) | Sistema irrigando |
+| ![Irrigação OFF](colocar caminho) | Sistema em standby |
+| ![Monitor Serial](colocar caminho) | Log completo |
 
 ## 👥 Equipe
 
@@ -499,7 +499,11 @@ farmtech-irrigacao-inteligente/
   - 📧 colega2@fiap.com.br  
   - 📋 Responsabilidades: 
 
-- **[Nome do Colega 3]** - *Analista de Dados*
+- **Leno Siqueira** -
+  - 📧 colega3@fiap.com.br
+  - 📋 Responsabilidades: 
+
+- **Yasmim** -
   - 📧 colega3@fiap.com.br
   - 📋 Responsabilidades: 
 
