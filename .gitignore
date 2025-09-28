@@ -3,3 +3,30 @@
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
+
+# IDEs
+.idea/
+.vscode/
+
+# GitHub Copilot (específico)
+.idea/copilot*
+*copilot*
+
+# Ambiente virtual
+venv/
+.venv/
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+
+# PlatformIO
+.pio/
+
+# Sistema
+.DS_Store
+Thumbs.db
