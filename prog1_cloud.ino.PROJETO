@@ -1,0 +1,84 @@
+#include <WiFi.h>
+#include <HTTPClient.h>
+#include <DHT.h>
+
+#define DHTPIN 23
+#define DHTTYPE DHT22
+#define RELAY_PIN 21
+#define BTN_N 25
+#define BTN_P 26
+#define BTN_K 27
+#define LDR_PIN 34
+
+const char* WIFI_SSID = "CN Support";
+const char* WIFI_PASS = "w1r3l3ss!@";
+
+const char* SUPABASE_URL = "https://semsjwhpsiybhodlpxic.supabase.co/rest/v1/leituras_sensores";
+const char* SUPABASE_KEY = "sb-publishable_UC-alwigfQPvqP_dQnImXw_tW7dvB7C"; // usar ANON
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(RELAY_PIN, OUTPUT);
+  pinMode(BTN_N, INPUT_PULLDOWN);
+  pinMode(BTN_P, INPUT_PULLDOWN);
+  pinMode(BTN_K, INPUT_PULLDOWN);
+
+  WiFi.begin(WIFI_SSID, WIFI_PASS);
+  Serial.print("Conectando no WiFi...");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.print(".");
+  }
+  Serial.println("\n✅ WiFi conectado!");
+  dht.begin();
+}
+
+void enviarLeitura(bool n, bool p, bool k, float ph, float umidade, bool bomba) {
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+    http.begin(SUPABASE_URL);
+    http.addHeader("Content-Type", "application/json");
+    http.addHeader("apikey", SUPABASE_KEY);
+    http.addHeader("Authorization", String("Bearer ") + SUPABASE_KEY);
+
+    String body = "{";
+    body += "\"nitrogenio\":" + String(n ? "true" : "false") + ",";
+    body += "\"fosforo\":" + String(p ? "true" : "false") + ",";
+    body += "\"potassio\":" + String(k ? "true" : "false") + ",";
+    body += "\"ph\":" + String(ph, 2) + ",";
+    body += "\"umidade\":" + String(umidade, 1) + ",";
+    body += "\"bomba\":" + String(bomba ? "true" : "false");
+    body += "}";
+
+    int httpCode = http.POST(body);
+    Serial.println("📡 Supabase resposta: " + String(httpCode));
+    http.end();
+  }
+}
+
+void loop() {
+  bool n = digitalRead(BTN_N);
+  bool p = digitalRead(BTN_P);
+  bool k = digitalRead(BTN_K);
+
+  int ldrRaw = analogRead(LDR_PIN);
+  float ph = map(ldrRaw, 0, 4095, 0, 14);
+
+  float umidade = dht.readHumidity();
+  if (isnan(umidade)) umidade = -1;
+
+  bool bomba = false;
+  if (n && p && k && (ph >= 6.0 && ph <= 6.8) && (umidade > 0 && umidade < 60)) {
+    bomba = true;
+  }
+
+  digitalWrite(RELAY_PIN, bomba ? HIGH : LOW);
+
+  Serial.printf("N:%d P:%d K:%d | pH=%.1f | Umidade=%.1f | Bomba=%d\n", n, p, k, ph, umidade, bomba);
+
+  enviarLeitura(n, p, k, ph, umidade, bomba);
+
+  delay(10000);
+}
