@@ -123,7 +123,8 @@ source("analise.R")
 
 ➖ Linhas horizontais = faixa ótima (60%–80%) para tomate 🍅
 
-.
+## 📂 Estrutura do Projeto
+```
 ├── README.md
 ├── platformio.ini
 ├── diagram.json
@@ -135,6 +136,7 @@ source("analise.R")
 │ └── requirements.txt
 └── /r
 └── analise.R
+```
 
 ## 🎥 Demonstração
 
