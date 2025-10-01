@@ -154,13 +154,13 @@ Análise em R com regressão linear
 
 👥 Equipe
 
+Giovani Saavedra
+
 Márcio Elifas
 
 Leno Siqueira
 
 Yasmim
-
-Giovani
 
 📚 Referências
 
