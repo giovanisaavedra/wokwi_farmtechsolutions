@@ -150,7 +150,7 @@ source("analise.R")
 
 4 - Dados chegando no Supabase
 
-- 5 Análise em R com regressão linear
+5 -  Análise em R com regressão linear
 
 ## 👥 Equipe
 
