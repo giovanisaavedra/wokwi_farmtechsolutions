@@ -99,23 +99,23 @@ Bomba: LIGADA 🚰
 - Use `prog1_cloud.ino` (conecta Wi-Fi, envia para Supabase).  
 - Necessário editar **SSID/senha Wi-Fi** e **API key Supabase**.  
 
-🚀 Como Executar
-🔹 Python (API Meteorológica)
-cd python
-pip install -r requirements.txt
-python api_weather.py
+## 🚀 Como Executar
+-🔹 Python (API Meteorológica)
+- cd python
+- pip install -r requirements.txt
+- python api_weather.py
 
-Coleta dados da API OpenWeather
+- Coleta dados da API OpenWeather
 
-Envia previsões para o Supabase
+- Envia previsões para o Supabase
 
-Permite integrar as condições climáticas no sistema de irrigação
+- Permite integrar as condições climáticas no sistema de irrigação
 
-🔹 R (Análise Estatística)
+##🔹 R (Análise Estatística)
 
 source("analise.R")
 
-Gera gráfico com:
+###Gera gráfico com:
 
 🔵 Pontos azuis = leituras reais de umidade (ESP32 → Supabase)
 
@@ -123,7 +123,7 @@ Gera gráfico com:
 
 ➖ Linhas horizontais = faixa ótima (60%–80%) para tomate 🍅
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 .
 ├── README.md
 ├── platformio.ini
@@ -138,21 +138,21 @@ Gera gráfico com:
     └── analise.R
 
 
-🎥 Demonstração
+## 🎥 Demonstração
 
-Vídeo (até 5 minutos) mostrando:
+### Vídeo (até 5 minutos) mostrando:
 
-Circuito no Wokwi
+1 - Circuito no Wokwi
 
-Serial Monitor com sensores variando
+2- Serial Monitor com sensores variando
 
-Python coletando previsão meteorológica
+3 - Python coletando previsão meteorológica
 
-Dados chegando no Supabase
+4 - Dados chegando no Supabase
 
-Análise em R com regressão linear
+- 5 Análise em R com regressão linear
 
-👥 Equipe
+## 👥 Equipe
 
 Giovani Saavedra
 
@@ -162,7 +162,7 @@ Leno Siqueira
 
 Yasmim
 
-📚 Referências
+## 📚 Referências
 
 Embrapa Hortaliças (2023) – Sistemas de Irrigação para Tomate
 
