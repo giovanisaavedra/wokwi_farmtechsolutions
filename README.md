@@ -11,9 +11,11 @@
 ---
 
 ## 🎯 Sobre o Projeto
-Sistema de irrigação automatizada e inteligente desenvolvido pela **FarmTech Solutions** como parte do projeto de **Agricultura Digital** (FIAP 2025).  
-O sistema monitora **nutrientes (NPK), pH do solo (via LDR), umidade (via DHT22 ou simulação)** e controla automaticamente uma bomba de irrigação.  
-Além disso, integra **dados climáticos (OpenWeather + Python + Supabase)** e aplica **análise estatística em R (regressão linear)** para prever quando o solo ficará seco.  
+Sistema de irrigação automatizada e inteligente desenvolvido pela FarmTech Solutions como parte do projeto de Agricultura Digital (FIAP 2025).
+O sistema monitora nutrientes (NPK), pH do solo (via LDR), umidade (via DHT22 ou simulação) e controla automaticamente uma bomba de irrigação.
+Além disso, integra dados climáticos (OpenWeather + Python + Supabase) e aplica análise estatística em R (regressão linear) para prever quando o solo ficará seco.
+
+⚠️ Nota didática: como o Wokwi não possui sensor de pH real, utilizamos o LDR (Light Dependent Resistor) para simular o pH do solo. Ao variar a luminosidade sobre o LDR, o valor lido é convertido para uma escala de 0 a 14 (pH). 
 
 ---
 
@@ -79,7 +81,7 @@ R (regressão linear)
 
 📸 Screenshot do circuito Wokwi: *(PRINT VS CODE)*  
 
-<img width="1254" height="582" alt="image" src="https://github.com/user-attachments/assets/99f90a15-0667-4999-b0b9-b2367de45250" />
+<img width="1249" height="587" alt="image" src="https://github.com/user-attachments/assets/40bd2ead-2adc-48b9-9d3e-e886c4571ec7" />
 
 
 ## 🚀 Como Executar
