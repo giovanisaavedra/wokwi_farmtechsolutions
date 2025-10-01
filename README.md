@@ -123,20 +123,18 @@ source("analise.R")
 
 ➖ Linhas horizontais = faixa ótima (60%–80%) para tomate 🍅
 
-## 📂 Estrutura do Projeto
 .
 ├── README.md
 ├── platformio.ini
 ├── diagram.json
 ├── /esp32
-│   ├── prog1_local.ino   # versão Wokwi (simulação)
-│   └── prog1_cloud.ino   # versão real (Wi-Fi + Supabase)
+│ ├── prog1_local.ino # versão Wokwi (simulação)
+│ └── prog1_cloud.ino # versão real (Wi-Fi + Supabase)
 ├── /python
-│   ├── api_weather.py
-│   └── requirements.txt
+│ ├── api_weather.py
+│ └── requirements.txt
 └── /r
-    └── analise.R
-
+└── analise.R
 
 ## 🎥 Demonstração
 
