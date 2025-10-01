@@ -77,7 +77,7 @@ R (regressão linear)
 - **DHT22 (data)** → GPIO 23  
 - **Relé (bomba)** → GPIO 21  
 
-📸 Screenshot do circuito Wokwi: *(adicionar print no repositório)*  
+📸 Screenshot do circuito Wokwi: *(PRINT VS CODE)*  
 
 <img width="1254" height="582" alt="image" src="https://github.com/user-attachments/assets/99f90a15-0667-4999-b0b9-b2367de45250" />
 
