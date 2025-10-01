@@ -99,32 +99,29 @@ Bomba: LIGADA 🚰
 - Use `prog1_cloud.ino` (conecta Wi-Fi, envia para Supabase).  
 - Necessário editar **SSID/senha Wi-Fi** e **API key Supabase**.  
 
-### Python
-```bash
+🚀 Como Executar
+🔹 Python (API Meteorológica)
 cd python
 pip install -r requirements.txt
 python api_weather.py
 
-R
+Coleta dados da API OpenWeather
+
+Envia previsões para o Supabase
+
+Permite integrar as condições climáticas no sistema de irrigação
+
+🔹 R (Análise Estatística)
+
 source("analise.R")
 
-Gera gráfico com pontos reais (azul) + previsão da regressão (linha vermelha).
+Gera gráfico com:
 
-Linhas horizontais marcam a faixa ótima (60%–80%).
+🔵 Pontos azuis = leituras reais de umidade (ESP32 → Supabase)
 
-📊 Análise Estatística (R)
+🔴 Linha vermelha = tendência prevista pela regressão linear
 
-Aplicamos regressão linear sobre leituras de umidade coletadas no Supabase.
-
-Pontos azuis = leituras reais (ESP32 → Supabase).
-
-Linha vermelha = previsão da tendência.
-
-Linhas de referência (60% e 80%) = faixa ótima para o tomate.
-
-Exemplo de insight:
-
-“O modelo prevê que em ~3h a umidade cairá abaixo de 60%. O sistema aciona irrigação antes desse ponto crítico.”
+➖ Linhas horizontais = faixa ótima (60%–80%) para tomate 🍅
 
 📂 Estrutura do Projeto
 .
@@ -139,6 +136,8 @@ Exemplo de insight:
 │   └── requirements.txt
 └── /r
     └── analise.R
+
+
 🎥 Demonstração
 
 Vídeo (até 5 minutos) mostrando:
@@ -162,7 +161,6 @@ Leno Siqueira
 Yasmim
 
 Giovani
-
 
 📚 Referências
 
