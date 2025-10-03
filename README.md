@@ -154,6 +154,10 @@ source("analise.R")
 
 5 -  Análise em R com regressão linear
 
+## 🎥 Vídeo Explicativo do Projeto
+
+[![Assista ao vídeo no YouTube](https://img.shields.io/badge/YouTube-Assistir%20Vídeo-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=cWHrUPWrhe8)
+
 ## 👥 Equipe
 
 Giovani Saavedra
