@@ -142,11 +142,11 @@ source("analise.R")
 
 ## 🎥 Demonstração
 
-### Vídeo (até 5 minutos) mostrando:
+[![Vídeo Explicativo](https://img.youtube.com/vi/cWHrUPWrhe8/0.jpg)](https://www.youtube.com/watch?v=cWHrUPWrhe8)
 
 1 - Circuito no Wokwi
 
-2- Serial Monitor com sensores variando
+2 - Serial Monitor com sensores variando
 
 3 - Python coletando previsão meteorológica
 
@@ -154,9 +154,6 @@ source("analise.R")
 
 5 -  Análise em R com regressão linear
 
-## 🎥 Vídeo Explicativo do Projeto
-
-[![Assista ao vídeo no YouTube](https://img.shields.io/badge/YouTube-Assistir%20Vídeo-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=cWHrUPWrhe8)
 
 ## 👥 Equipe
 
